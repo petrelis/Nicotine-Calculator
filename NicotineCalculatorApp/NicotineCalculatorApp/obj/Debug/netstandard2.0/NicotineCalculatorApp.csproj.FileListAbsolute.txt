@@ -1,0 +1,16 @@
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\bin\Debug\netstandard2.0\NicotineCalculatorApp.deps.json
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\bin\Debug\netstandard2.0\NicotineCalculatorApp.dll
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\bin\Debug\netstandard2.0\NicotineCalculatorApp.pdb
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.csproj.AssemblyReference.cache
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.AssemblyInfoInputs.cache
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.AssemblyInfo.cs
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.dll
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\refint\NicotineCalculatorApp.dll
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\NicotineCalculatorApp.pdb
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\ref\NicotineCalculatorApp.dll
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\visti\Desktop\NicotineCalculatorApp\NicotineCalculatorApp\NicotineCalculatorApp\obj\Debug\netstandard2.0\Views\PrecisionCalcPage.xaml.g.cs

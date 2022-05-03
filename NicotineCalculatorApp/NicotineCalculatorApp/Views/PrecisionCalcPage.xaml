@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NicotineCalculatorApp.ViewModels"
+             x:Class="NicotineCalculatorApp.Views.PrecisionCalcPage"
+             Title="Precision Calculator">
+    <ContentPage.BindingContext>
+        <local:NicListViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Spacing="0" BackgroundColor="#6f79a8">
+        <ContentView>
+            <FlexLayout BackgroundColor="#9fa8da" JustifyContent="SpaceEvenly" HeightRequest="200">
+                <ContentView>
+                    <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" Padding="10, 10" WidthRequest="150" >
+                        <Entry 
+                            x:Name="BaseMlInputField"
+                            WidthRequest="150"
+                            Keyboard="Numeric"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding NewBaseMlValue}"
+                            Placeholder="Base ml"
+                            />
+                        <Entry 
+                            x:Name="NicShotMgInputField"
+                            WidthRequest="150"
+                            Keyboard="Numeric"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding NewNicMgValue}"
+                            Placeholder="NicShot mg/ml"
+                            />
+                        <Entry 
+                            x:Name="TargetMgInputField"
+                            WidthRequest="150"
+                            Keyboard="Numeric"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding NewTargetMgValue}"
+                            Placeholder="Target mg/ml"
+                            />
+                    </FlexLayout>
+                </ContentView>
+                <Button 
+                    x:Name="AddButton"
+                    Text="Add"
+                    TextColor="White"
+                    BackgroundColor="#6f79a8"
+                    CornerRadius="20"
+                    HeightRequest="80"
+                    Command="{Binding AddNicCommand}"
+                    FlexLayout.AlignSelf="Center"
+                    />
+
+
+            </FlexLayout>
+        </ContentView>
+        <Label Text="Calculated Nicotine Amounts:" 
+               Padding="20, 10"
+               TextColor="White"/>
+        <ListView x:Name="NicListView" ItemsSource="{Binding NicAmounts}" RowHeight="100" BackgroundColor="#d1d9ff">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout JustifyContent="Start" Direction="Row">
+                            <ContentView>
+                                <FlexLayout Direction="Column" JustifyContent="SpaceEvenly"  Padding="20, 10" WidthRequest="275" >
+                                    <ContentView>
+                                        <FlexLayout AlignItems="Start" HeightRequest="50">
+                                            <Label Text="Nic shot mg: " TextColor="Black"/>
+                                            <Label Text="{Binding NicShotMg}" TextColor="Black"/>
+                                        </FlexLayout>
+                                    </ContentView>
+                                    <ContentView>
+                                        <FlexLayout AlignItems="Start" HeightRequest="50">
+                                            <Label Text="Liquid ml: " TextColor="Black"/>
+                                            <Label Text="{Binding BaseMl}" TextColor="Black"/>
+                                        </FlexLayout>
+                                    </ContentView>
+                                    <ContentView>
+                                        <FlexLayout AlignItems="Start" HeightRequest="50">
+                                            <Label Text="Nic shot ml: " TextColor="Black"/>
+                                            <Label Text="{Binding NicShotMl}" TextColor="Black"/>
+                                        </FlexLayout>
+                                    </ContentView>
+                                    <ContentView>
+                                        <FlexLayout AlignItems="Start" HeightRequest="50">
+                                            <Label Text="Target mg/ml: " TextColor="Black"/>
+                                            <Label Text="{Binding TargetMg}" TextColor="Black"/>
+                                        </FlexLayout>
+                                    </ContentView>
+                                </FlexLayout>
+                            </ContentView>
+                            <ImageButton
+                                x:Name="DeleteBtn"
+                                Source="trashImg.png"
+                                Scale="2"
+                                BackgroundColor="#d1d9ff"
+                                Command="{Binding Path=BindingContext.RemoveNicCommand, Source={x:Reference NicListView}}"
+                                CommandParameter="{Binding .}"
+                                />
+                        </FlexLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

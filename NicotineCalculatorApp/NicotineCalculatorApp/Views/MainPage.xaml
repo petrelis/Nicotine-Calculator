@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NicotineCalculatorApp.MainPage"
+             Title="Quick Calculator"
+             BackgroundColor="#9fa8da"
+             >
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="NavBtn"
+            Clicked="NavBtn_Clicked"
+            IconImageSource="precisionCalcImg.png"
+            />
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="End" HeightRequest="600" HorizontalOptions="Center" WidthRequest="300">
+            <Picker x:Name = "BaseMlPicker"
+                    Title = "Bottle ml"
+                    FontSize="Large"
+                    TextColor="White"
+                    >
+                <Picker.Items>
+                    <x:String>50</x:String>
+
+                    <x:String>100</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name = "NicMgPicker"
+                    Title = "NicShot mg/ml"
+                    FontSize="Large"
+                    >
+                <Picker.Items>
+                    <x:String>20</x:String>
+
+                    <x:String>40</x:String>
+
+                    <x:String>60</x:String>
+
+                </Picker.Items>
+
+            </Picker>
+
+            <Picker x:Name = "TargetMgPicker"
+                    Title = "Target mg/ml"
+                    FontSize="Large"
+                    >
+                <Picker.Items>
+                    <x:String>3</x:String>
+
+                    <x:String>6</x:String>
+
+                    <x:String>9</x:String>
+
+                </Picker.Items>
+
+            </Picker>
+
+            <Button x:Name = "CalculateBtn"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Text = "Calculate"
+                    CornerRadius="20"
+                    HeightRequest="80"
+                    BackgroundColor="#6f79a8"
+                    Clicked = "CalculateBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
